@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+<body>
+    <div class="top">
+        <div class="icon">
+          <a href="phonemenu.html" > <i class="fa fa-bars fa-2x"></i></a>
+        </div>
+       <nav>
+           <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contents01.html">Contents01</a></li>
+            <li><a href="contents02.html">Contents02</a></li>
+            <li><a href="contents03.html">Contents03</a></li>
+            <li><a href="contactus.html">ContactUs</a></li>
+           </ul>
+       </nav>
+      <p>YOMIURI COLLEGE WEB SITE</p>
+    </div>
+    <div class="main">
+    <div class="img">
+        <li><a href="contents01.html"><img src="newpic/01.png" height="150px" width="150px"></a></li>
+        <li><a href="contents02.html"><img src="newpic/02.png" height="150px" width="150px"></a></li>
+        <li><a href="contents03.html"><img src="newpic/03.png" height="150px" width="150px"></a></li>
+    </div>
+    <h3>What's new</h3>
+    <dl>
+    <dt>2019.05.24</dt>
+    <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+    <dt>2019.05.13</dt>
+    <dd>テキストテキストテキストテキストテキステキストテキストトテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+    <dt>2109.05.07</dt>
+    <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+    <dt>2019.05.03</dt>
+    <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+    <dt>2019.05.01</dt>
+    <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+   </dl>
+    </div>
+    <div class="up"><a href="#">&#710;</a></div>
+    <div class="footer">Copyright © YOMIURI COLLEGE ALL rights reserved</div>
+    
+</body>
+
+<style>
+dl  {
+  color: #716666;
+  line-height: 30px; 
+  padding-bottom: 40px;
+  font-size: 12px;
+  font-family: monospace;
+}
+dl,h3{
+ max-width: 768px;
+ margin: auto;
+}
+h3{
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-family: 'Noto Serif JP', serif;
+}
+dt{
+    width:100px;
+    float: left;
+}
+dd{
+    border-bottom: 1px dotted #716666;
+    word-break: break-word;
+}
+.img {
+  width:100%;
+  height:180px;
+  padding-top:20px;
+  display: flex;
+  justify-content:space-evenly;
+  list-style-type: none;
+  max-width: 768px;
+  margin: auto;
+}
+.img li{
+  width:30%;
+  
+}
+.img li img{
+  object-fit: contain;
+  width:100%;
+  
+}
+
+@media(min-width: 769px){
+  dd{
+    padding-left: 80px;
+  }
+  dt{
+    max-width:80px;
+  }
+}
+</style>
+<script>
+
+  var offset = 50;
+  var duration = 500;
+  $(function(){
+  $(window).scroll(function () {
+  if ($(this).scrollTop() > offset)
+  $('.up').fadeIn(duration);else
+  $('.up').fadeOut(duration);
+  });
+  $('.up').click(function () {
+  $('body,html').animate({scrollTop: 0}, duration);
+  });
+  });
+  </script>
+</html>

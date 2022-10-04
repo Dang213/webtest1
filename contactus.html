@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="icon">
+          <a href="phonemenu.html" > <i class="fa fa-bars fa-2x"></i></a>
+        </div>
+       <nav>
+           <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contents01.html">Contents01</a></li>
+            <li><a href="contents02.html">Contents02</a></li>
+            <li><a href="contents03.html">Contents03</a></li>
+            <li><a href="contactus.html">ContactUs</a></li>
+           </ul>
+       </nav>
+       
+      <p>YOMIURI COLLEGE WEB SITE</p>
+    </div>
+    <div class="main">
+        <section class="box">
+            <h3>ContactUs</h3>
+            <div class="text">
+            <p>メールでのお問い合わせは、下記の入力フォームよりお願いいたします。 </p>
+            <p> 必要事頃をご記入の上、送信してください。</p>  
+            <p><span class="red" style="font-size:17px ;">必須</span>は記入必須項目になります。記入されませんと送信することが出来ませんので。ご注意ください。</p>
+            </div>
+        <div class="form-main">
+            <dl>
+                <dt><span class="red">必須</span>
+                お名前</dt>
+                <dd> 
+                    <input type="text" required="" class="p-formname" data-parsley-error-message=
+                    "名前を入力してください" placeholder="（全角）例：寂しい　とみおか" >
+                </dd>
+                <dt><span class="red">必須</span>
+                E-mail</dt>
+                <dd> 
+                        <input type="text" required="" class="p-formname"  >
+                </dd>
+                <dt><span class="red">必須</span>
+                E-mail 確認入力</dt>
+                <dd> 
+                            <input type="text" required="" class="p-formname" >
+                </dd>
+                <dt><span class="blue">任意</span>
+                ご住所</dt>
+                <dd>
+                    <p><small>〒</small><input type="text" class="p-form"><small>例:1234-5678「ー(ハイフン)」を入れてください。</small></p>
+                    <p><select name="select" id="select">
+                      <option>選択してください</option>
+                      <option value="">東京都</option>
+                      <option value="">上にある</option>
+                      <option value="">下にある</option>
+                      <option value="">横にある</option>
+                      <option value="">森の中に住む</option>
+                      <option value="">川の中に飛ぶ</option> </select></p>
+                    <p><input type="text" required="" class="p-formname1"  ></p>
+                    <p><small class="p-formname1">例:千代田区九段南３－９－１</small></p>
+                </dd>
+                <dt><span class="blue">任意</span>
+                    お電話番号</dt>
+                <dd><input type="text" required="" class="p-w"  ></dd>
+                <dt><span class="red">必須</span>
+                    お問い合わせ内容</dt>
+                <dd><textarea name="textarea" class="p-formname" style="height:120px"></textarea></dd>
+                </dl>
+                <div class="check"><input type="submit" name="submit" class="submit" value="確認画面へ">
+        </div></div> 
+        </section>
+    </div>
+    <div class="up"><a href="#">&#710;</a></div>
+    <div class="footer">Copyright © YOMIURI COLLEGE ALL rights reserved</div>
+</body>
+<style>
+.check{
+    position: relative;
+    margin-bottom: 50px;
+}
+.submit{
+    width: 170px;
+    height:40px;
+    background-color: rgb(12, 152, 165);
+    border:none;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.p-form{
+    margin-left: 10px;
+    width: 140px;
+    margin-right: 30px;
+}
+.text p{
+    color: #3d3939;
+}
+#select{
+    color: #3d3939;
+    width:110px;
+    font-size: 10px;
+}
+h3{
+    padding: 30px 0;
+    font-family: 'Noto Serif JP', serif;
+}
+.box{
+    max-width: 750px;
+    margin: auto;
+}
+.text{
+    padding-bottom: 30px;
+}
+.red{
+    background-color: orange;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    padding:2px 4px ;
+    font-family: monospace;
+}
+.blue{
+    background-color: rgb(28, 155, 206);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    padding:2px 4px ;
+    font-family: monospace;
+}
+dt{
+    width:170px;
+    float: left;
+}
+dd{
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #716666;
+}
+dt,dd{
+    padding-top: 10px;
+}
+dl ,.check {
+  color: #363333;
+  line-height: 30px; 
+  padding-bottom: 40px;
+  font-size: 13px;
+  font-family: monospace;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.p-formname,.p-formname1{
+    width:70%;
+}
+@media(min-width:769px){
+    #select,.p-formname1{
+        margin-left:170px;
+    }
+}
+@media(max-width:768px){
+ .p-formname,.p-formname1{
+    width: 100%;
+ }
+}
+@media(max-width:250px){
+    .p-w{
+        width:100%;
+    }
+}
+</style>
+<script>
+
+    var offset = 50;
+    var duration = 500;
+    $(function(){
+    $(window).scroll(function () {
+    if ($(this).scrollTop() > offset)
+    $('.up').fadeIn(duration);else
+    $('.up').fadeOut(duration);
+    });
+    $('.up').click(function () {
+    $('body,html').animate({scrollTop: 0}, duration);
+    });
+    });
+    </script>
+</html>
